@@ -4,6 +4,13 @@
     Shrenik Gala (sngala)
     Prashant Gupta (pgupta7)
 
+###Links to screencasts:
+#### Pushing to 'dev' branch
+![Image](https://github.com/shrenikgala/DevopsM1/blob/master/Devbranch.gif)
+
+#### Pushing to 'release' branch
+![Image](https://github.com/shrenikgala/DevopsM1/blob/master/release.gif)
+
 ####Target Project
 We have used a simple **NodeJs** application for this stage of the project which just responds with a simple message when hit with a request. A test case checks for the string returned, and fails if the string is different than the one in the test case. We have configured **Jenkins** on our machine as our build server.
 
