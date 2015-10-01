@@ -4,13 +4,13 @@
     Shrenik Gala (sngala)
     Prashant Gupta (pgupta7)
 
-We have used a simple NodeJs application for this stage of the project which just responds with a simple message when hit with a request. A test case checks for the string returned, and fails if the string is different than the one in the test case.
+We have used a simple **NodeJs** application for this stage of the project which just responds with a simple message when hit with a request. A test case checks for the string returned, and fails if the string is different than the one in the test case. We have configured **Jenkins** on our machine as our build server.
 
 ##Build section
 
 ####Triggered Build
 
-We used a local git repository, and we have added a post-commit hook to each of the developer and release branches to build a corresponding job on Jenkins. This is done through the following code:
+We used a local git repository, and we have added a post-commit hook to each of the developer and release branches to build a corresponding job on Jenkins. This is done through the following code in post-commit hook:
 
 
     if [ `git rev-parse --abbrev-ref HEAD` = "dev" ]; then
