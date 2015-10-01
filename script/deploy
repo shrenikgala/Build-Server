@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh ubuntu@54.193.75.120 <<EOF
+  cd ~/Devopstest
+  git pull
+  npm install --production
+  forever restartall
+  exit
+EOF
