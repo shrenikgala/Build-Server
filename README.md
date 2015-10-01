@@ -8,7 +8,7 @@ We have used a simple NodeJs application for this stage of the project which jus
 
 ###Build section
 
-####Git hook
+####Triggered Build
 
 We used a local git repository, and we have added a post-commit hook to each of the developer and release branches to build a corresponding job on Jenkins. This is done through the following code:
 
@@ -20,3 +20,15 @@ We used a local git repository, and we have added a post-commit hook to each of 
     fi
 
 Depending on the branch on which the commit happened, the curl command sends a build job notification to Jenkins.
+
+####Dependency Management + Build Script Execution
+
+For this section, we have executed some commands while the job is being executed on Jenkins:
+
+     cd $WORKSPACE
+     npm clean
+     npm install
+     ./script/test
+
+
+    
