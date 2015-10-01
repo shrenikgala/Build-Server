@@ -53,7 +53,8 @@ To execute a build job , we have executed following commands while the job is be
 
 ####Build Status + External Post-Build Job Triggers
 
-- The build status can be seen on the Jenkins page, as shown below:
+- The failure or success of a build job can be seen on the Jenkins page, as shown below:
+![Image](https://github.com/shrenikgala/DevopsM1/blob/master/failuresuccess.png)
 
 - We have triggered an external event of sending emails on both success and failure of build jobs. We used email-ext plugin for the same and configured it to allow gmail smtp server to send emails to a list of recipients.
 
@@ -71,4 +72,7 @@ The if condition checks the branch in which the commit is made. If the commit is
 
 ####Build History and Display over HTTP
     
-We can see the build history on our Jenkins server running on: http://localhost:8080
+We can see the build history on our Jenkins server running on: <br> 
+http://localhost:8080/view/All/builds
+
+![Image](https://github.com/shrenikgala/DevopsM1/blob/master/buildhistory.png)
