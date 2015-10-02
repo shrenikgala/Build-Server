@@ -63,7 +63,7 @@ To execute a build job , we have executed following commands while the job is be
 - We have triggered an external event of sending emails on both success and failure of build jobs. We used email-ext plugin for the same and configured it to allow gmail smtp server to send emails to a list of recipients.
 - As a post-build task, we have used the **Hudson post build plugin** to echo a simple message onto the screen once a build is successful.
 This is done by configuring the jenkins for the condition that the script is executed only when the build is successful.
-![Image](https://github.com/shrenikgala/DevopsM1/blob/master/failuresuccess.png)
+![Image](https://github.com/shrenikgala/DevopsM1/blob/master/postbuildsuccess.png)
 
 ####Multiple Branches, Multiple Jobs
 
