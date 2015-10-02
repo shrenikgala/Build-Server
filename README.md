@@ -61,7 +61,7 @@ To execute a build job , we have executed following commands while the job is be
 ![Image](https://github.com/shrenikgala/DevopsM1/blob/master/failuresuccess.png)
 
 - We have triggered an external event of sending emails on both success and failure of build jobs. We used email-ext plugin for the same and configured it to allow gmail smtp server to send emails to a list of recipients.
-- We have also used the **Hudson post build plugin** to open a link to google.com
+- As a post-build task, we have used the **Hudson post build plugin** to echo a simple message onto the screen once a build is successful.
 
 ####Multiple Branches, Multiple Jobs
 
