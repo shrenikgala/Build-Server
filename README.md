@@ -64,6 +64,8 @@ To execute a build job , we have executed following commands while the job is be
 - As a post-build task, we have used the **Hudson post build plugin** to echo a simple message onto the screen once a build is successful.
 This is done by configuring the jenkins for the condition that the script is executed only when the build is successful.
 ![Image](https://github.com/shrenikgala/DevopsM1/blob/master/postbuildsuccess.png)
+Below is the screenshot to show that script is not executed when the build fails.
+![Image](https://github.com/shrenikgala/DevopsM1/blob/master/post build failure.png)
 
 ####Multiple Branches, Multiple Jobs
 
